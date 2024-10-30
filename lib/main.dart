@@ -13,7 +13,6 @@ import 'package:provider/provider.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // initialise app based on platform- web or mobile
   if (kIsWeb) {
     await Firebase.initializeApp(
       options: FirebaseOptions(
